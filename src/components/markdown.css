@@ -1,0 +1,144 @@
+
+.markdown code {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  padding: .2em .4em;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 12px;
+  color: #24292f;
+}
+
+.markdown .hljs {
+  line-height: 1.8;
+  font-size: 12px;
+  padding: 13px 15px;
+  background-color: #fafafa;
+  margin-bottom: 24px;
+  margin-top: 0;
+  border-radius: 4px;
+  -webkit-font-smoothing: auto;
+}
+
+.markdown .hljs code {
+  background-color: inherit;
+  padding: 0;
+}
+
+.markdown .hljs-diff-block {
+  position: relative;
+}
+
+.markdown .hljs-diff-block .hljs-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 1.8;
+  font-size: 12px;
+  padding: 13px 0;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.markdown .hljs-diff-block .hljs-lines .highlighted {
+  background-color: rgba(0, 150, 95, 0.11);
+}
+
+.markdown table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  font-size: 14px;
+  margin-bottom: 45px;
+  line-height: 1.5em;
+}
+
+.markdown table th {
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 400;
+  border-bottom: 1px solid #dcdfe6;
+  padding: 10px 15px;
+}
+
+.markdown table td {
+  border-bottom: 1px solid #dcdfe6;
+  padding: 10px 15px;
+}
+
+.markdown .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px
+}
+
+.markdown .anchor:focus {
+  outline: 0;
+}
+
+.markdown h1 .octicon-link,
+.markdown h2 .octicon-link,
+.markdown h3 .octicon-link,
+.markdown h4 .octicon-link,
+.markdown h5 .octicon-link,
+.markdown h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown h1:hover .anchor .octicon-link,
+.markdown h2:hover .anchor .octicon-link,
+.markdown h3:hover .anchor .octicon-link,
+.markdown h4:hover .anchor .octicon-link,
+.markdown h5:hover .anchor .octicon-link,
+.markdown h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown h1:hover .anchor .octicon-link:before,
+.markdown h2:hover .anchor .octicon-link:before,
+.markdown h3:hover .anchor .octicon-link:before,
+.markdown h4:hover .anchor .octicon-link:before,
+.markdown h5:hover .anchor .octicon-link:before,
+.markdown h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: " ";
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.markdown blockquote {
+  padding: 10px 1em;
+  margin: 15px 0;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+  background-color: #f9f9f9;
+}
+
+.markdown blockquote> :first-child {
+  margin-top: 0;
+}
+
+.markdown blockquote> :last-child {
+  margin-bottom: 0;
+}
+
+.markdown .warning {
+  padding: 8px 16px;
+  background-color: #fef0f0;
+  border-radius: 4px;
+  border-left: 5px solid #f56c6c;
+  margin: 20px 0;
+}
+
+.markdown .tip {
+  padding: 8px 16px;
+  background-color: #ecf5ff;
+  border-radius: 4px;
+  border-left: 5px solid #409eff;
+  margin: 20px 0;
+}

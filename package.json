@@ -1,0 +1,39 @@
+{
+  "name": "vite-plugin-markdown-vue",
+  "version": "0.1.0",
+  "description": "Vite plugin for converting markdown into Vue components.",
+  "keywords": ["vite-plugin-markdown-vue", "markdown-vue", "vite", "markdown"],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "files": ["dist", "docs"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.6",
+    "@vitejs/plugin-vue": "^1.8.1",
+    "vite": "^2.5.10",
+    "vue": "^3.0.5"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^4.1.1",
+    "highlight.js": "^11.1.0",
+    "markdown-it": "^12.1.0",
+    "markdown-it-anchor": "^8.3.0",
+    "markdown-it-container": "^3.0.0",
+    "uslug": "^1.0.4"
+  },
+  "author": {
+    "email": "lanyueos@qq.com",
+    "name": "lanyue"
+  },
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/mengdu/vite-plugin-markdown-vue"
+  },
+  "bugs": {
+    "url": "https://github.com/mengdu/vite-plugin-markdown-vue/issues"
+  },
+  "license": "MIT"
+}
