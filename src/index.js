@@ -59,6 +59,7 @@ export function transformToVueCode (source, md, options = {}) {
           const componenetMixinsString = `const ${componenetMixinsName} = {
             components: {\n${components.map(e => `${e[0]}: ${e[1]}`)}\n}
           }`
+
           const componenetMixins = `if (${constName}.mixins) {
             ${constName}.mixins.push(${componenetMixinsName})
           } else {
@@ -66,8 +67,8 @@ export function transformToVueCode (source, md, options = {}) {
           }
           `
           script = text
-            .replace(/export +default/, `const ${constName} =`)
-            .replace(/<\/script>/, `${componenetMixinsString}\n${componenetMixins}\nexport default ${constName}\n<\/script>`)
+            .replace(/export +default/, () => `const ${constName} =`)
+            .replace(/<\/script>/, () => `${componenetMixinsString}\n${componenetMixins}\nexport default ${constName}\n<\/script>`)
         } else {
           script = text
         }

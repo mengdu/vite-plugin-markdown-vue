@@ -67,13 +67,14 @@ export function genInlineComponentText(template, script) {
   `
 
   script = script.trim()
+  const exportName = '$$$blockDemoExport'
 
   if (script) {
     script = script
-      .replace(/export\s+default/, 'const $$blockDemoExport =')
+      .replace(/export\s+default/, () => `const ${exportName} =`)
       .replace(/import ({.*}) from 'vue'/g, (s, s1) => `const ${s1} = Vue`)
   } else {
-    script = 'const $$blockDemoExport = {}'
+    script = `const ${exportName} = {}`
   }
 
   demoComponentContent = `(function() {
@@ -81,7 +82,7 @@ export function genInlineComponentText(template, script) {
     ${script}
     return {
       render,
-      ...$$blockDemoExport
+      ...${exportName}
     }
   })()`
 
