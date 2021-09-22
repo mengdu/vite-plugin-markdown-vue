@@ -65,7 +65,11 @@ export default {
 // main.js
 import { createApp } from 'vue'
 import App from './App.vue'
-import DemoBlock from './components/demo-block.vue'
+import { DemoBlock } from 'vite-plugin-markdown-vue/components'
+// or
+// import DemoBlock from './components/demo-block.vue'
+
+import 'highlight.js/styles/color-brewer.css'
 
 const app = createApp(App)
 app.component('demo-block', DemoBlock) // register `demo-block` component.
