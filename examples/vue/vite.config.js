@@ -4,6 +4,7 @@ import markdown from '../../dist/index.es'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [markdown(), vue({
     include: [/\.vue$/, /\.md$/]
   })]
