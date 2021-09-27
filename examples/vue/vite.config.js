@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import markdown from '../../dist/index.es'
+import markdown from '../../'
 
 // https://vitejs.dev/config/
 export default defineConfig({

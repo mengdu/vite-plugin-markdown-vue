@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import README from '../../../README.md'
-import Docs from '../../../docs/docs.md'
+import README from '../docs/README.md'
+import Docs from '../docs/docs.md'
 
 export default {
   data () {
