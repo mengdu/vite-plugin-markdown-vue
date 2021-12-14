@@ -57,7 +57,7 @@ export function transformToVueCode (source, md, options = {}) {
           const constName = '$$$exportDefault'
           const componenetMixinsName = '$$$componenetMixins'
           const componenetMixinsString = `const ${componenetMixinsName} = {
-            components: {\n${components.map(e => `${e[0]}: ${e[1]}`)}\n}
+            components: {\n${components.map(e => `${e[0]}: ${e[1]}`).join(',\n')}\n}
           }`
 
           const componenetMixins = `if (${constName}.mixins) {
@@ -86,7 +86,7 @@ export function transformToVueCode (source, md, options = {}) {
       import * as Vue from 'vue'
       export default {
         components: {
-          ${components.map(e => e[0] + ': ' + e[1] + ',')}
+          ${components.map(e => e[0] + ': ' + e[1]).join(',\n')}
         }
       }
     </script>`
